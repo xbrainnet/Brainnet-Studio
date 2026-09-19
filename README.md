@@ -2,7 +2,7 @@
 
 **脑网络分析与疾病分类研究工具箱 · Brain Network Analysis and Disease Classification Research Toolbox**
 
-**v0.1.0 | Windows x64 | CUDA**
+**v0.1.0 | Windows x64 | CUDA 12.1**
 
 **中文版已发布 · 英文版已发布 / Chinese edition released · English edition released**
 
@@ -42,7 +42,7 @@ iBrain Toolbox 是一款面向脑网络分析与疾病分类研究的可视化�
 | 项目        | 要求                                                         |
 | ----------- | ------------------------------------------------------------ |
 | 操作系统    | Windows 10 / 11，64 位                                       |
-| 显卡与驱动  | 本发行包为 CUDA 版本，需要 NVIDIA GPU 及兼容驱动             |
+| 显卡与驱动  | 本发行包为 CUDA 12.1 版本，需要 NVIDIA GPU 及兼容驱动             |
 | 内存        | 至少 4 GB；较大模型建议 8 GB 或以上，实际需求取决于数据规模和所选方法 |
 | Python 环境 | 无需单独安装                                                 |
 | 本地端口    | 默认使用 `5000`，可通过启动参数修改                          |
@@ -201,7 +201,7 @@ The English edition follows the same naming convention, replacing only `chinese`
 | Item                | Requirement                                                  |
 | ------------------- | ------------------------------------------------------------ |
 | Operating system    | Windows 10 / 11, 64-bit                                      |
-| GPU and driver      | This CUDA package requires an NVIDIA GPU and a compatible driver |
+| GPU and driver      | This CUDA 12.1 package requires an NVIDIA GPU and a compatible driver |
 | Memory              | At least 4 GB; 8 GB or more is recommended for larger models. Actual requirements depend on the data and method |
 | Python environment  | No separate installation required                            |
 | Local port          | `5000` by default; configurable through a startup argument   |
