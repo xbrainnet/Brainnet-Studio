@@ -4,7 +4,7 @@
 
 **v0.1.0 | Windows x64 | CUDA**
 
-**中文版已发布 · 英文版编译中 / Chinese edition released · English edition build in progress**
+**中文版已发布 · 英文版已发布 / Chinese edition released · English edition released**
 
 [中文说明](#中文说明) · [English documentation](#english-documentation)
 
@@ -14,16 +14,16 @@
 
 iBrain Toolbox 是一款面向脑网络分析与疾病分类研究的可视化工具箱，集成 27 种机器学习与深度学习方法，支持根据所选方法使用 fMRI、DTI 或多模态数据。工具箱将数据导入、网络构建、分类任务配置、模型训练和结果可视化整合到图形界面中，方便研究者开展实验与方法比较。
 
-当前已发布中文版 **Windows 64 位 CUDA 可执行版本**，无需单独安装 Python 或配置 Python 依赖。英文界面版本正在编译，尚未发布。本文提供中英双语使用说明，并列出两个语言版本的文件命名规则。
+当前已发布中文版 **Windows 64 位 CUDA 可执行版本**，无需单独安装 Python 或配置 Python 依赖。英文界面版本也已发布。本文提供中英双语使用说明，并列出两个语言版本的文件命名规则。
 
 ### 语言版本与发布状态
 
 | 软件版本 | 当前状态         | 主程序                       | 分卷压缩包命名                                     |
 | -------- | ---------------- | ---------------------------- | -------------------------------------------------- |
 | 中文版   | 已发布           | `iBrain-toolbox-chinese.exe` | `iBrain-toolbox-chinese-v0.1.0.zip.001`、`.002`    |
-| 英文版   | 编译中，尚未发布 | `iBrain-toolbox-english.exe` | `iBrain-toolbox-english-v0.1.0.zip.001`、`.002` 等 |
+| 英文版   | 已发布 | `iBrain-toolbox-english.exe` | `iBrain-toolbox-english-v0.1.0.zip.001`、`.002` 等 |
 
-英文版沿用中文版的命名规则，仅将 `chinese` 替换为 `english`。英文版文件名用于说明发布后的命名方式，实际分卷数量以发布时的附件为准。两种界面语言分别打包，请按所需语言选择发行包。
+英文版沿用中文版的命名规则，仅将 `chinese` 替换为 `english`。英文版已发布，实际分卷数量以 Releases 附件为准。两种界面语言分别打包，请按所需语言选择发行包。
 
 ### 主要功能
 
@@ -57,7 +57,7 @@ iBrain-toolbox-chinese-v0.1.0.zip.001
 iBrain-toolbox-chinese-v0.1.0.zip.002
 ```
 
-英文版编译完成并发布后，分卷文件将按以下规则命名；当前尚未提供下载：
+英文版 v0.1.0 已发布，分卷文件如下：
 
 ```text
 iBrain-toolbox-english-v0.1.0.zip.001
@@ -69,7 +69,7 @@ iBrain-toolbox-english-v0.1.0.zip.002
 1. 将同一语言版本的全部分卷文件放入同一文件夹，保留原始文件名；请勿混用中英文版分卷。
 2. 使用支持分卷 ZIP 的解压软件（例如 7-Zip），从 `.zip.001` 文件开始解压；无需分别解压各个分卷。若同时使用两个版本，请分别解压到不同目录。
 3. 完整保留解压后的文件夹。主程序需要同目录下的依赖文件，请勿只移动 `.exe` 文件。
-4. 中文版双击 `iBrain-toolbox-chinese.exe`；英文版发布后双击 `iBrain-toolbox-english.exe`。也可使用对应发行包内的 `start.bat` 启动。
+4. 中文版双击 `iBrain-toolbox-chinese.exe`；英文版双击 `iBrain-toolbox-english.exe`。也可使用对应发行包内的 `start.bat` 启动。
 5. 浏览器将自动打开本地界面：[http://127.0.0.1:5000](http://127.0.0.1:5000)。
 
 运行期间请保留程序的命令行窗口；关闭该窗口会停止本地服务。上述分卷文件是可运行的发行包，GitHub 自动生成的 `Source code` 压缩包不等同于该安装包。
@@ -119,7 +119,7 @@ iBrain-toolbox-english-v0.1.0.zip.002
 .\iBrain-toolbox-chinese.exe --data-dir "D:\iBrainData"
 ```
 
-英文版发布后，将上述命令中的 `chinese` 替换为 `english`，例如：
+使用英文版时，将上述命令中的 `chinese` 替换为 `english`，例如：
 
 ```powershell
 .\iBrain-toolbox-english.exe --port 8080
@@ -147,7 +147,7 @@ iBrain-toolbox-english-v0.1.0.zip.002
 
 **程序无法启动或窗口立即关闭**
 
-在解压目录的 PowerShell 中运行对应语言版本的主程序，查看错误信息：中文版使用 `.\iBrain-toolbox-chinese.exe`，英文版发布后使用 `.\iBrain-toolbox-english.exe`。检查依赖文件是否完整，以及 NVIDIA 驱动是否满足该 CUDA 发行包的运行要求。
+在解压目录的 PowerShell 中运行对应语言版本的主程序，查看错误信息：中文版使用 `.\iBrain-toolbox-chinese.exe`，英文版使用 `.\iBrain-toolbox-english.exe`。检查依赖文件是否完整，以及 NVIDIA 驱动是否满足该 CUDA 发行包的运行要求。
 
 **浏览器没有自动打开**
 
@@ -173,16 +173,16 @@ iBrain-toolbox-english-v0.1.0.zip.002
 
 iBrain Toolbox is a graphical toolkit for brain network analysis and disease classification research. It integrates 27 machine learning and deep learning methods and supports fMRI, DTI, or multimodal data, depending on the selected method. Its graphical interface brings together data import, network construction, classification task setup, model training, and result visualization to support experiments and method comparison.
 
-The Chinese edition is available as a **Windows 64-bit CUDA executable package**. No separate Python installation or Python dependency setup is required. The English-interface edition is currently being compiled and has not yet been released. This bilingual README documents usage and the filenames for both language editions.
+The Chinese edition is available as a **Windows 64-bit CUDA executable package**. No separate Python installation or Python dependency setup is required. The English-interface edition has also been released. This bilingual README documents usage and the filenames for both language editions.
 
 ### Language editions and release status
 
 | Edition | Current status                      | Executable                   | Archive volume naming                                 |
 | ------- | ----------------------------------- | ---------------------------- | ----------------------------------------------------- |
 | Chinese | Released                            | `iBrain-toolbox-chinese.exe` | `iBrain-toolbox-chinese-v0.1.0.zip.001`, `.002`       |
-| English | Build in progress; not yet released | `iBrain-toolbox-english.exe` | `iBrain-toolbox-english-v0.1.0.zip.001`, `.002`, etc. |
+| English | Released | `iBrain-toolbox-english.exe` | `iBrain-toolbox-english-v0.1.0.zip.001`, `.002`, etc. |
 
-The English edition follows the same naming convention, replacing only `chinese` with `english`. English filenames describe the planned release assets; the final number of volumes will be determined by the published assets. The two interface languages are packaged separately. Choose the package for your preferred language.
+The English edition follows the same naming convention, replacing only `chinese` with `english`. The English edition is now released; see its release assets for the available archive volumes. The two interface languages are packaged separately. Choose the package for your preferred language.
 
 ### Features
 
@@ -216,7 +216,7 @@ iBrain-toolbox-chinese-v0.1.0.zip.001
 iBrain-toolbox-chinese-v0.1.0.zip.002
 ```
 
-Once compiled and released, the English edition will use the following naming convention. It is not yet available for download:
+The English edition of v0.1.0 is now available with the following archive volumes:
 
 ```text
 iBrain-toolbox-english-v0.1.0.zip.001
@@ -228,7 +228,7 @@ Check the published release assets for the final number of English archive volum
 1. Place all volumes for the same language edition in one folder and keep their original filenames. Do not mix Chinese and English archive volumes.
 2. Use an archive utility that supports split ZIP archives, such as 7-Zip, and start extraction from `.zip.001`. Do not extract each volume separately. If using both editions, extract them into separate directories.
 3. Keep the extracted folder intact. The executable depends on the accompanying files; do not move the `.exe` on its own.
-4. Launch `iBrain-toolbox-chinese.exe` for the Chinese edition, or `iBrain-toolbox-english.exe` for the English edition once released. Alternatively, use `start.bat` in the corresponding package.
+4. Launch `iBrain-toolbox-chinese.exe` for the Chinese edition, or `iBrain-toolbox-english.exe` for the English edition. Alternatively, use `start.bat` in the corresponding package.
 5. Your browser will automatically open the local interface at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
 Keep the application's command window open while using the toolbox. Closing it stops the local service. The archive volumes above contain the runnable distribution; GitHub's automatically generated `Source code` archives are not equivalent to this package.
@@ -278,7 +278,7 @@ Open PowerShell in the extracted application folder and use the following comman
 .\iBrain-toolbox-chinese.exe --data-dir "D:\iBrainData"
 ```
 
-After the English edition is released, replace `chinese` with `english` in these commands, for example:
+For the English edition, replace `chinese` with `english` in these commands, for example:
 
 ```powershell
 .\iBrain-toolbox-english.exe --port 8080
@@ -306,7 +306,7 @@ Check that all volumes for your selected edition have finished downloading, are 
 
 **The application does not start or its window closes immediately**
 
-Run the executable for your edition from PowerShell in the extracted folder to inspect the error: `.\iBrain-toolbox-chinese.exe` for Chinese, or `.\iBrain-toolbox-english.exe` for English once released. Check that all accompanying files are present and that the NVIDIA driver supports this CUDA distribution.
+Run the executable for your edition from PowerShell in the extracted folder to inspect the error: `.\iBrain-toolbox-chinese.exe` for Chinese, or `.\iBrain-toolbox-english.exe` for English. Check that all accompanying files are present and that the NVIDIA driver supports this CUDA distribution.
 
 **The browser does not open automatically**
 
