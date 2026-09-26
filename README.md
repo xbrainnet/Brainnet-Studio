@@ -1,4 +1,4 @@
-# iBrain Toolbox
+# Brainnet-Studio
 
 **脑网络分析与疾病分类研究工具箱 · Brain Network Analysis and Disease Classification Research Toolbox**
 
@@ -12,7 +12,7 @@
 
 ### 项目简介
 
-iBrain Toolbox 是一款面向脑网络分析与疾病分类研究的可视化工具箱，集成 27 种机器学习与深度学习方法，支持根据所选方法使用 fMRI、DTI 或多模态数据。工具箱将数据导入、网络构建、分类任务配置、模型训练和结果可视化整合到图形界面中，方便研究者开展实验与方法比较。
+Brainnet-Studio 是一款面向脑网络分析与疾病分类研究的可视化工具箱，集成 27 种机器学习与深度学习方法，支持根据所选方法使用 fMRI、DTI 或多模态数据。工具箱将数据导入、网络构建、分类任务配置、模型训练和结果可视化整合到图形界面中，方便研究者开展实验与方法比较。
 
 当前已发布中文版 **Windows 64 位 CUDA 可执行版本**，无需单独安装 Python 或配置 Python 依赖。英文界面版本也已发布。本文提供中英双语使用说明，并列出两个语言版本的文件命名规则。
 
@@ -53,15 +53,15 @@ iBrain Toolbox 是一款面向脑网络分析与疾病分类研究的可视化�
 在本仓库的 **Releases** 页面下载所需语言版本的全部分卷文件。目前可下载的中文版 v0.1.0 包含：
 
 ```text
-iBrain-toolbox-chinese-v0.1.0.zip.001
-iBrain-toolbox-chinese-v0.1.0.zip.002
+Brainnet-Studio-chinese-v0.1.0.zip.001
+Brainnet-Studio-chinese-v0.1.0.zip.002
 ```
 
 英文版 v0.1.0 已发布，分卷文件如下：
 
 ```text
-iBrain-toolbox-english-v0.1.0.zip.001
-iBrain-toolbox-english-v0.1.0.zip.002
+Brainnet-Studio-english-v0.1.0.zip.001
+Brainnet-Studio-english-v0.1.0.zip.002
 ```
 
 英文版实际分卷数量以 Releases 附件为准。以下步骤适用于所下载的语言版本：
@@ -171,7 +171,7 @@ iBrain-toolbox-english-v0.1.0.zip.002
 
 ### Overview
 
-iBrain Toolbox is a graphical toolkit for brain network analysis and disease classification research. It integrates 27 machine learning and deep learning methods and supports fMRI, DTI, or multimodal data, depending on the selected method. Its graphical interface brings together data import, network construction, classification task setup, model training, and result visualization to support experiments and method comparison.
+Brainnet-Studio is a graphical toolkit for brain network analysis and disease classification research. It integrates 27 machine learning and deep learning methods and supports fMRI, DTI, or multimodal data, depending on the selected method. Its graphical interface brings together data import, network construction, classification task setup, model training, and result visualization to support experiments and method comparison.
 
 The Chinese edition is available as a **Windows 64-bit CUDA executable package**. No separate Python installation or Python dependency setup is required. The English-interface edition has also been released. This bilingual README documents usage and the filenames for both language editions.
 
@@ -179,8 +179,8 @@ The Chinese edition is available as a **Windows 64-bit CUDA executable package**
 
 | Edition | Current status                      | Executable                   | Archive volume naming                                 |
 | ------- | ----------------------------------- | ---------------------------- | ----------------------------------------------------- |
-| Chinese | Released                            | `iBrain-toolbox-chinese.exe` | `iBrain-toolbox-chinese-v0.1.0.zip.001`, `.002`       |
-| English | Released | `iBrain-toolbox-english.exe` | `iBrain-toolbox-english-v0.1.0.zip.001`, `.002`, etc. |
+| Chinese | Released                            | `iBrain-toolbox-chinese.exe` | `Brainnet-Studio-chinese-v0.1.0.zip.001`, `.002`       |
+| English | Released | `iBrain-toolbox-english.exe` | `Brainnet-Studio-english-v0.1.0.zip.001`, `.002`, etc. |
 
 The English edition follows the same naming convention, replacing only `chinese` with `english`. The English edition is now released; see its release assets for the available archive volumes. The two interface languages are packaged separately. Choose the package for your preferred language.
 
@@ -212,8 +212,8 @@ The English edition follows the same naming convention, replacing only `chinese`
 Download all archive volumes for your chosen language edition from this repository's **Releases** page. The currently available Chinese edition of v0.1.0 contains:
 
 ```text
-iBrain-toolbox-chinese-v0.1.0.zip.001
-iBrain-toolbox-chinese-v0.1.0.zip.002
+Brainnet-Studio-chinese-v0.1.0.zip.001
+Brainnet-Studio-chinese-v0.1.0.zip.002
 ```
 
 The English edition of v0.1.0 is now available with the following archive volumes:
