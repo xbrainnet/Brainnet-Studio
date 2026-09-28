@@ -1,6 +1,6 @@
 # Brainnet-Studio
 
-**脑网络智能分析软件 · Brain Network Intelligent Analysis Software**
+**脑网络智能分析软件 · Brain Network Intelligent Analysis Toolkit**
 
 **v0.1.0 | Windows x64 | CUDA 12.1**
 
@@ -12,7 +12,7 @@
 
 ### 项目简介
 
-Brainnet-Studio 是一款面向脑网络智能分析的可视化研究软件，集成 27 种机器学习与深度学习方法，支持根据所选方法使用 fMRI、DTI 或多模态数据。Brainnet-Studio 将数据导入、网络构建、分类任务配置、模型训练和结果可视化整合到图形界面中，方便研究者开展实验与方法比较。
+Brainnet-Studio 是一款面向脑网络智能分析的可视化研究工具包，集成 27 种机器学习与深度学习方法，支持根据所选方法使用 fMRI、DTI 或多模态数据。Brainnet-Studio 将数据导入、网络构建、分类任务配置、模型训练和结果可视化整合到图形界面中，方便研究者开展实验与方法比较。
 
 当前已发布中文版 **Windows 64 位 CUDA 可执行版本**，无需单独安装 Python 或配置 Python 依赖。英文界面版本也已发布。本文提供中英双语使用说明，并列出两个语言版本的文件命名规则。
 
@@ -173,7 +173,7 @@ Set-Location -LiteralPath (Split-Path -Parent $brainnetExecutable)
 
 ### Overview
 
-Brainnet-Studio is graphical research software for brain network intelligent analysis. It integrates 27 machine learning and deep learning methods and supports fMRI, DTI, or multimodal data, depending on the selected method. Its graphical interface brings together data import, network construction, classification task setup, model training, and result visualization to support experiments and method comparison.
+Brainnet-Studio is graphical research toolkit for brain network intelligent analysis. It integrates 27 machine learning and deep learning methods and supports fMRI, DTI, or multimodal data, depending on the selected method. Its graphical interface brings together data import, network construction, classification task setup, model training, and result visualization to support experiments and method comparison.
 
 The Chinese edition is available as a **Windows 64-bit CUDA executable package**. No separate Python installation or Python dependency setup is required. The English-interface edition has also been released. This bilingual README documents usage and the filenames for both language editions.
 
