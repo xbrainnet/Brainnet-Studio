@@ -20,7 +20,7 @@ Brainnet-Studio 是一款面向脑网络分析与疾病分类研究的可视化�
 
 | 软件版本 | 当前状态         | 主程序                       | 分卷压缩包命名                                     |
 | -------- | ---------------- | ---------------------------- | -------------------------------------------------- |
-| 中文版   | 已发布           | `iBrain-toolbox-chinese.exe` | `iBrain-toolbox-chinese-v0.1.0.zip.001`、`.002`    |
+| 中文版   | 已发布           | `iBrain-toolbox-chinese.exe` | `Brainnet-Studio-chinese-v0.1.0.zip.001`、`.002`    |
 | 英文版   | 已发布 | `iBrain-toolbox-english.exe` | `Brainnet-Studio-english-v0.1.0.zip.001`、`.002` |
 
 中文版压缩包使用 `iBrain-toolbox-chinese` 前缀，英文版使用 `Brainnet-Studio-english` 前缀；两个版本的 v0.1.0 均包含 `.zip.001` 和 `.zip.002` 两个分卷。两种界面语言分别打包，请按所需语言选择发行包。
@@ -55,8 +55,8 @@ Brainnet-Studio 是一款面向脑网络分析与疾病分类研究的可视化�
 在本仓库的 **Releases** 页面下载所需语言版本的全部分卷文件。目前可下载的中文版 v0.1.0 包含：
 
 ```text
-iBrain-toolbox-chinese-v0.1.0.zip.001
-iBrain-toolbox-chinese-v0.1.0.zip.002
+Brainnet-Studio-chinese-v0.1.0.zip.001
+Brainnet-Studio-chinese-v0.1.0.zip.002
 ```
 
 英文版 v0.1.0 已发布，分卷文件如下：
