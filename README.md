@@ -1,6 +1,6 @@
 # Brainnet-Studio
 
-**脑网络分析与疾病分类研究工具箱 · Brain Network Analysis and Disease Classification Research Toolbox**
+**脑网络分析与疾病分类研究工具包 · Brain Network Analysis and Disease Classification Research Toolkit**
 
 **v0.1.0 | Windows x64 | CUDA 12.1**
 
@@ -12,7 +12,7 @@
 
 ### 项目简介
 
-Brainnet-Studio 是一款面向脑网络分析与疾病分类研究的可视化工具箱，集成 27 种机器学习与深度学习方法，支持根据所选方法使用 fMRI、DTI 或多模态数据。工具箱将数据导入、网络构建、分类任务配置、模型训练和结果可视化整合到图形界面中，方便研究者开展实验与方法比较。
+Brainnet-Studio 是一款面向脑网络分析与疾病分类研究的可视化工具包，集成 27 种机器学习与深度学习方法，支持根据所选方法使用 fMRI、DTI 或多模态数据。工具包将数据导入、网络构建、分类任务配置、模型训练和结果可视化整合到图形界面中，方便研究者开展实验与方法比较。
 
 当前已发布中文版 **Windows 64 位 CUDA 可执行版本**，无需单独安装 Python 或配置 Python 依赖。英文界面版本也已发布。本文提供中英双语使用说明，并列出两个语言版本的文件命名规则。
 
@@ -21,9 +21,11 @@ Brainnet-Studio 是一款面向脑网络分析与疾病分类研究的可视化�
 | 软件版本 | 当前状态         | 主程序                       | 分卷压缩包命名                                     |
 | -------- | ---------------- | ---------------------------- | -------------------------------------------------- |
 | 中文版   | 已发布           | `iBrain-toolbox-chinese.exe` | `iBrain-toolbox-chinese-v0.1.0.zip.001`、`.002`    |
-| 英文版   | 已发布 | `iBrain-toolbox-english.exe` | `iBrain-toolbox-english-v0.1.0.zip.001`、`.002` 等 |
+| 英文版   | 已发布 | `iBrain-toolbox-english.exe` | `Brainnet-Studio-english-v0.1.0.zip.001`、`.002` |
 
-英文版沿用中文版的命名规则，仅将 `chinese` 替换为 `english`。英文版已发布，实际分卷数量以 Releases 附件为准。两种界面语言分别打包，请按所需语言选择发行包。
+中文版压缩包使用 `iBrain-toolbox-chinese` 前缀，英文版使用 `Brainnet-Studio-english` 前缀；两个版本的 v0.1.0 均包含 `.zip.001` 和 `.zip.002` 两个分卷。两种界面语言分别打包，请按所需语言选择发行包。
+
+项目展示名称统一使用 Toolkit；已发布程序、压缩包和默认数据目录保留原名称，操作说明使用实际名称。
 
 ### 主要功能
 
@@ -53,8 +55,8 @@ Brainnet-Studio 是一款面向脑网络分析与疾病分类研究的可视化�
 在本仓库的 **Releases** 页面下载所需语言版本的全部分卷文件。目前可下载的中文版 v0.1.0 包含：
 
 ```text
-Brainnet-Studio-chinese-v0.1.0.zip.001
-Brainnet-Studio-chinese-v0.1.0.zip.002
+iBrain-toolbox-chinese-v0.1.0.zip.001
+iBrain-toolbox-chinese-v0.1.0.zip.002
 ```
 
 英文版 v0.1.0 已发布，分卷文件如下：
@@ -100,7 +102,7 @@ Brainnet-Studio-english-v0.1.0.zip.002
 
 ### AI 辅助分析
 
-工具箱支持配置 Anthropic、OpenAI 或 DeepSeek 等服务商的 API Key，默认不附带密钥。普通模型训练无需 API Key。
+工具包支持配置 Anthropic、OpenAI 或 DeepSeek 等服务商的 API Key，默认不附带密钥。普通模型训练无需 API Key。
 
 生成 AI 报告需要连接所选服务商；分析特征摘要及填写的补充说明会用于构建模型请求。具体可用模型以页面识别结果为准。
 
@@ -163,7 +165,7 @@ Brainnet-Studio-english-v0.1.0.zip.002
 
 ### 问题反馈
 
-欢迎通过仓库 Issues 提交问题或建议。建议附上工具箱版本及界面语言、Windows 版本、GPU 与驱动信息、所选方法、数据维度、复现步骤及错误日志。提交前请移除日志中的 API Key 和个人信息。
+欢迎通过仓库 Issues 提交问题或建议。建议附上工具包版本及界面语言、Windows 版本、GPU 与驱动信息、所选方法、数据维度、复现步骤及错误日志。提交前请移除日志中的 API Key 和个人信息。
 
 ---
 
@@ -179,10 +181,12 @@ The Chinese edition is available as a **Windows 64-bit CUDA executable package**
 
 | Edition | Current status                      | Executable                   | Archive volume naming                                 |
 | ------- | ----------------------------------- | ---------------------------- | ----------------------------------------------------- |
-| Chinese | Released                            | `iBrain-toolbox-chinese.exe` | `Brainnet-Studio-chinese-v0.1.0.zip.001`, `.002`       |
-| English | Released | `iBrain-toolbox-english.exe` | `Brainnet-Studio-english-v0.1.0.zip.001`, `.002`, etc. |
+| Chinese | Released                            | `iBrain-toolbox-chinese.exe` | `iBrain-toolbox-chinese-v0.1.0.zip.001`, `.002`       |
+| English | Released | `iBrain-toolbox-english.exe` | `Brainnet-Studio-english-v0.1.0.zip.001`, `.002` |
 
-The English edition follows the same naming convention, replacing only `chinese` with `english`. The English edition is now released; see its release assets for the available archive volumes. The two interface languages are packaged separately. Choose the package for your preferred language.
+The Chinese archives use the `iBrain-toolbox-chinese` prefix, while the English archives use `Brainnet-Studio-english`; both v0.1.0 editions contain two volumes, `.zip.001` and `.zip.002`. The two interface languages are packaged separately. Choose the package for your preferred language.
+
+The project display name uses Toolkit; published executables, archives, and the default data directory retain their original names, which are used in the instructions.
 
 ### Features
 
@@ -212,15 +216,15 @@ The English edition follows the same naming convention, replacing only `chinese`
 Download all archive volumes for your chosen language edition from this repository's **Releases** page. The currently available Chinese edition of v0.1.0 contains:
 
 ```text
-Brainnet-Studio-chinese-v0.1.0.zip.001
-Brainnet-Studio-chinese-v0.1.0.zip.002
+iBrain-toolbox-chinese-v0.1.0.zip.001
+iBrain-toolbox-chinese-v0.1.0.zip.002
 ```
 
 The English edition of v0.1.0 is now available with the following archive volumes:
 
 ```text
-iBrain-toolbox-english-v0.1.0.zip.001
-iBrain-toolbox-english-v0.1.0.zip.002
+Brainnet-Studio-english-v0.1.0.zip.001
+Brainnet-Studio-english-v0.1.0.zip.002
 ```
 
 Check the published release assets for the final number of English archive volumes. The following steps apply to the edition you download:
@@ -231,7 +235,7 @@ Check the published release assets for the final number of English archive volum
 4. Launch `iBrain-toolbox-chinese.exe` for the Chinese edition, or `iBrain-toolbox-english.exe` for the English edition. Alternatively, use `start.bat` in the corresponding package.
 5. Your browser will automatically open the local interface at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
-Keep the application's command window open while using the toolbox. Closing it stops the local service. The archive volumes above contain the runnable distribution; GitHub's automatically generated `Source code` archives are not equivalent to this package.
+Keep the application's command window open while using the toolkit. Closing it stops the local service. The archive volumes above contain the runnable distribution; GitHub's automatically generated `Source code` archives are not equivalent to this package.
 
 ### Prepare your data
 
@@ -259,7 +263,7 @@ Prepare MATLAB `.mat` files containing data that have already undergone preproce
 
 ### AI-assisted analysis
 
-The toolbox supports API Key configuration for providers such as Anthropic, OpenAI, and DeepSeek. No API Key is included. Standard model training does not require an API Key.
+The toolkit supports API Key configuration for providers such as Anthropic, OpenAI, and DeepSeek. No API Key is included. Standard model training does not require an API Key.
 
 AI report generation requires access to the selected provider. Summarized analysis features and any supplementary notes you enter are used to construct the model request. Available models depend on the service detected by the interface.
 
@@ -322,4 +326,4 @@ Check connectivity to the public CDNs used by the interface or to the selected m
 
 ### Feedback
 
-Please use the repository's Issues page to report problems or suggest improvements. Include the toolbox version and interface language, Windows version, GPU and driver information, selected method, data dimensions, reproduction steps, and error logs where relevant. Remove API Keys and personal information before sharing logs.
+Please use the repository's Issues page to report problems or suggest improvements. Include the toolkit version and interface language, Windows version, GPU and driver information, selected method, data dimensions, reproduction steps, and error logs where relevant. Remove API Keys and personal information before sharing logs.
