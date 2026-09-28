@@ -1,6 +1,6 @@
 # Brainnet-Studio
 
-**脑网络分析与疾病分类研究工具包 · Brain Network Analysis and Disease Classification Research Toolkit**
+**脑网络分析与疾病分类研究软件 · Brain Network Analysis and Disease Classification Research Software**
 
 **v0.1.0 | Windows x64 | CUDA 12.1**
 
@@ -12,7 +12,7 @@
 
 ### 项目简介
 
-Brainnet-Studio 是一款面向脑网络分析与疾病分类研究的可视化工具包，集成 27 种机器学习与深度学习方法，支持根据所选方法使用 fMRI、DTI 或多模态数据。工具包将数据导入、网络构建、分类任务配置、模型训练和结果可视化整合到图形界面中，方便研究者开展实验与方法比较。
+Brainnet-Studio 是一款面向脑网络分析与疾病分类研究的可视化研究软件，集成 27 种机器学习与深度学习方法，支持根据所选方法使用 fMRI、DTI 或多模态数据。Brainnet-Studio 将数据导入、网络构建、分类任务配置、模型训练和结果可视化整合到图形界面中，方便研究者开展实验与方法比较。
 
 当前已发布中文版 **Windows 64 位 CUDA 可执行版本**，无需单独安装 Python 或配置 Python 依赖。英文界面版本也已发布。本文提供中英双语使用说明，并列出两个语言版本的文件命名规则。
 
@@ -20,12 +20,12 @@ Brainnet-Studio 是一款面向脑网络分析与疾病分类研究的可视化�
 
 | 软件版本 | 当前状态         | 主程序                       | 分卷压缩包命名                                     |
 | -------- | ---------------- | ---------------------------- | -------------------------------------------------- |
-| 中文版   | 已发布           | `iBrain-toolbox-chinese.exe` | `Brainnet-Studio-chinese-v0.1.0.zip.001`、`.002`    |
-| 英文版   | 已发布 | `iBrain-toolbox-english.exe` | `Brainnet-Studio-english-v0.1.0.zip.001`、`.002` |
+| 中文版   | 已发布           | 解压后的主程序 `.exe` | `Brainnet-Studio-chinese-v0.1.0.zip.001`、`.002`    |
+| 英文版   | 已发布 | 解压后的主程序 `.exe` | `Brainnet-Studio-english-v0.1.0.zip.001`、`.002` |
 
-中文版压缩包使用 `iBrain-toolbox-chinese` 前缀，英文版使用 `Brainnet-Studio-english` 前缀；两个版本的 v0.1.0 均包含 `.zip.001` 和 `.zip.002` 两个分卷。两种界面语言分别打包，请按所需语言选择发行包。
+中文版压缩包使用 `Brainnet-Studio-chinese` 前缀，英文版使用 `Brainnet-Studio-english` 前缀；两个版本的 v0.1.0 均包含 `.zip.001` 和 `.zip.002` 两个分卷。两种界面语言分别打包，请按所需语言选择发行包。
 
-项目展示名称统一使用 Toolkit；已发布程序、压缩包和默认数据目录保留原名称，操作说明使用实际名称。
+项目和下载压缩包统一使用 Brainnet-Studio 名称；现有 `.exe` 文件及程序内置数据目录保留原名，启动时请使用发行包内的主程序。
 
 ### 主要功能
 
@@ -71,7 +71,7 @@ Brainnet-Studio-english-v0.1.0.zip.002
 1. 将同一语言版本的全部分卷文件放入同一文件夹，保留原始文件名；请勿混用中英文版分卷。
 2. 使用支持分卷 ZIP 的解压软件（例如 7-Zip），从 `.zip.001` 文件开始解压；无需分别解压各个分卷。若同时使用两个版本，请分别解压到不同目录。
 3. 完整保留解压后的文件夹。主程序需要同目录下的依赖文件，请勿只移动 `.exe` 文件。
-4. 中文版双击 `iBrain-toolbox-chinese.exe`；英文版双击 `iBrain-toolbox-english.exe`。也可使用对应发行包内的 `start.bat` 启动。
+4. 在所需语言版本的解压目录中双击 `start.bat`，或运行该目录中的主程序 `.exe`。
 5. 浏览器将自动打开本地界面：[http://127.0.0.1:5000](http://127.0.0.1:5000)。
 
 运行期间请保留程序的命令行窗口；关闭该窗口会停止本地服务。上述分卷文件是可运行的发行包，GitHub 自动生成的 `Source code` 压缩包不等同于该安装包。
@@ -102,30 +102,30 @@ Brainnet-Studio-english-v0.1.0.zip.002
 
 ### AI 辅助分析
 
-工具包支持配置 Anthropic、OpenAI 或 DeepSeek 等服务商的 API Key，默认不附带密钥。普通模型训练无需 API Key。
+Brainnet-Studio 支持配置 Anthropic、OpenAI 或 DeepSeek 等服务商的 API Key，默认不附带密钥。普通模型训练无需 API Key。
 
 生成 AI 报告需要连接所选服务商；分析特征摘要及填写的补充说明会用于构建模型请求。具体可用模型以页面识别结果为准。
 
 ### 启动参数
 
-在解压目录中打开 PowerShell，按需执行以下命令（以已发布的中文版为例）：
+在 PowerShell 中输入所需语言版本解压目录内主程序 `.exe` 的完整路径（输入时无需添加引号），再按需执行以下命令：
 
 ```powershell
+# 选择已解压的主程序（中文或英文版）
+$brainnetExecutable = Read-Host '请输入解压后的主程序 .exe 完整路径'
+Set-Location -LiteralPath (Split-Path -Parent $brainnetExecutable)
+
 # 使用其他端口
-.\iBrain-toolbox-chinese.exe --port 8080
+& $brainnetExecutable --port 8080
 
 # 启动后不自动打开浏览器
-.\iBrain-toolbox-chinese.exe --no-browser
+& $brainnetExecutable --no-browser
 
 # 指定数据保存目录
-.\iBrain-toolbox-chinese.exe --data-dir "D:\iBrainData"
+& $brainnetExecutable --data-dir "D:\Brainnet-StudioData"
 ```
 
-使用英文版时，将上述命令中的 `chinese` 替换为 `english`，例如：
-
-```powershell
-.\iBrain-toolbox-english.exe --port 8080
-```
+中英文版使用相同参数；切换语言版本时，请重新选择对应解压目录中的主程序。
 
 使用 `--port 8080` 后，通过 [http://127.0.0.1:8080](http://127.0.0.1:8080) 访问。
 
@@ -137,7 +137,7 @@ Brainnet-Studio-english-v0.1.0.zip.002
 %APPDATA%\BrainToolbox\
 ```
 
-可通过 `--data-dir` 修改保存位置。该目录独立于程序解压目录，删除程序文件夹不会自动清除其中的实验数据。
+该内置目录名为兼容现有程序而保留。可通过 `--data-dir` 修改保存位置。该目录独立于程序解压目录，删除程序文件夹不会自动清除其中的实验数据。
 
 发行包包含 `examples/` 示例配置，以及 `nilearn_data/` 中的 AAL/SPM12 图谱与标签资源。图谱资源随包提供，但部分前端功能仍需联网加载资源。
 
@@ -149,7 +149,7 @@ Brainnet-Studio-english-v0.1.0.zip.002
 
 **程序无法启动或窗口立即关闭**
 
-在解压目录的 PowerShell 中运行对应语言版本的主程序，查看错误信息：中文版使用 `.\iBrain-toolbox-chinese.exe`，英文版使用 `.\iBrain-toolbox-english.exe`。检查依赖文件是否完整，以及 NVIDIA 驱动是否满足该 CUDA 发行包的运行要求。
+在 PowerShell 中按“启动参数”一节选择实际主程序，再运行 `& $brainnetExecutable` 查看错误信息。检查依赖文件是否完整，以及 NVIDIA 驱动是否满足该 CUDA 发行包的运行要求。
 
 **浏览器没有自动打开**
 
@@ -165,7 +165,7 @@ Brainnet-Studio-english-v0.1.0.zip.002
 
 ### 问题反馈
 
-欢迎通过仓库 Issues 提交问题或建议。建议附上工具包版本及界面语言、Windows 版本、GPU 与驱动信息、所选方法、数据维度、复现步骤及错误日志。提交前请移除日志中的 API Key 和个人信息。
+欢迎通过仓库 Issues 提交问题或建议。建议附上 Brainnet-Studio 版本及界面语言、Windows 版本、GPU 与驱动信息、所选方法、数据维度、复现步骤及错误日志。提交前请移除日志中的 API Key 和个人信息。
 
 ---
 
@@ -173,7 +173,7 @@ Brainnet-Studio-english-v0.1.0.zip.002
 
 ### Overview
 
-Brainnet-Studio is a graphical toolkit for brain network analysis and disease classification research. It integrates 27 machine learning and deep learning methods and supports fMRI, DTI, or multimodal data, depending on the selected method. Its graphical interface brings together data import, network construction, classification task setup, model training, and result visualization to support experiments and method comparison.
+Brainnet-Studio is graphical research software for brain network analysis and disease classification. It integrates 27 machine learning and deep learning methods and supports fMRI, DTI, or multimodal data, depending on the selected method. Its graphical interface brings together data import, network construction, classification task setup, model training, and result visualization to support experiments and method comparison.
 
 The Chinese edition is available as a **Windows 64-bit CUDA executable package**. No separate Python installation or Python dependency setup is required. The English-interface edition has also been released. This bilingual README documents usage and the filenames for both language editions.
 
@@ -181,12 +181,12 @@ The Chinese edition is available as a **Windows 64-bit CUDA executable package**
 
 | Edition | Current status                      | Executable                   | Archive volume naming                                 |
 | ------- | ----------------------------------- | ---------------------------- | ----------------------------------------------------- |
-| Chinese | Released                            | `iBrain-toolbox-chinese.exe` | `iBrain-toolbox-chinese-v0.1.0.zip.001`, `.002`       |
-| English | Released | `iBrain-toolbox-english.exe` | `Brainnet-Studio-english-v0.1.0.zip.001`, `.002` |
+| Chinese | Released                            | Main `.exe` in the extracted folder | `Brainnet-Studio-chinese-v0.1.0.zip.001`, `.002`       |
+| English | Released | Main `.exe` in the extracted folder | `Brainnet-Studio-english-v0.1.0.zip.001`, `.002` |
 
-The Chinese archives use the `iBrain-toolbox-chinese` prefix, while the English archives use `Brainnet-Studio-english`; both v0.1.0 editions contain two volumes, `.zip.001` and `.zip.002`. The two interface languages are packaged separately. Choose the package for your preferred language.
+The Chinese archives use the `Brainnet-Studio-chinese` prefix, while the English archives use `Brainnet-Studio-english`; both v0.1.0 editions contain two volumes, `.zip.001` and `.zip.002`. The two interface languages are packaged separately. Choose the package for your preferred language.
 
-The project display name uses Toolkit; published executables, archives, and the default data directory retain their original names, which are used in the instructions.
+The project and downloadable archives use the Brainnet-Studio name; existing `.exe` files and the program's built-in data directory retain their original names. Launch the main executable included in the distribution.
 
 ### Features
 
@@ -216,8 +216,8 @@ The project display name uses Toolkit; published executables, archives, and the 
 Download all archive volumes for your chosen language edition from this repository's **Releases** page. The currently available Chinese edition of v0.1.0 contains:
 
 ```text
-iBrain-toolbox-chinese-v0.1.0.zip.001
-iBrain-toolbox-chinese-v0.1.0.zip.002
+Brainnet-Studio-chinese-v0.1.0.zip.001
+Brainnet-Studio-chinese-v0.1.0.zip.002
 ```
 
 The English edition of v0.1.0 is now available with the following archive volumes:
@@ -232,10 +232,10 @@ Check the published release assets for the final number of English archive volum
 1. Place all volumes for the same language edition in one folder and keep their original filenames. Do not mix Chinese and English archive volumes.
 2. Use an archive utility that supports split ZIP archives, such as 7-Zip, and start extraction from `.zip.001`. Do not extract each volume separately. If using both editions, extract them into separate directories.
 3. Keep the extracted folder intact. The executable depends on the accompanying files; do not move the `.exe` on its own.
-4. Launch `iBrain-toolbox-chinese.exe` for the Chinese edition, or `iBrain-toolbox-english.exe` for the English edition. Alternatively, use `start.bat` in the corresponding package.
+4. Open `start.bat` in the extracted folder for your chosen language edition, or run the main `.exe` in that folder.
 5. Your browser will automatically open the local interface at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
-Keep the application's command window open while using the toolkit. Closing it stops the local service. The archive volumes above contain the runnable distribution; GitHub's automatically generated `Source code` archives are not equivalent to this package.
+Keep the application's command window open while using Brainnet-Studio. Closing it stops the local service. The archive volumes above contain the runnable distribution; GitHub's automatically generated `Source code` archives are not equivalent to this package.
 
 ### Prepare your data
 
@@ -263,30 +263,30 @@ Prepare MATLAB `.mat` files containing data that have already undergone preproce
 
 ### AI-assisted analysis
 
-The toolkit supports API Key configuration for providers such as Anthropic, OpenAI, and DeepSeek. No API Key is included. Standard model training does not require an API Key.
+Brainnet-Studio supports API Key configuration for providers such as Anthropic, OpenAI, and DeepSeek. No API Key is included. Standard model training does not require an API Key.
 
 AI report generation requires access to the selected provider. Summarized analysis features and any supplementary notes you enter are used to construct the model request. Available models depend on the service detected by the interface.
 
 ### Startup arguments
 
-Open PowerShell in the extracted application folder and use the following commands as needed. These examples use the currently released Chinese edition:
+In PowerShell, enter the full path to the main `.exe` in the extracted folder for your chosen language edition, without surrounding quotes. Then use the following commands as needed:
 
 ```powershell
+# Choose the extracted main executable (Chinese or English edition)
+$brainnetExecutable = Read-Host 'Enter the full path to the extracted main .exe'
+Set-Location -LiteralPath (Split-Path -Parent $brainnetExecutable)
+
 # Use a different port
-.\iBrain-toolbox-chinese.exe --port 8080
+& $brainnetExecutable --port 8080
 
 # Start without automatically opening the browser
-.\iBrain-toolbox-chinese.exe --no-browser
+& $brainnetExecutable --no-browser
 
 # Set a custom data directory
-.\iBrain-toolbox-chinese.exe --data-dir "D:\iBrainData"
+& $brainnetExecutable --data-dir "D:\Brainnet-StudioData"
 ```
 
-For the English edition, replace `chinese` with `english` in these commands, for example:
-
-```powershell
-.\iBrain-toolbox-english.exe --port 8080
-```
+Both language editions use the same arguments. To switch editions, select the main executable in the corresponding extracted folder again.
 
 With `--port 8080`, open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
@@ -298,7 +298,7 @@ Uploaded files, training logs, configurations, and model checkpoints are saved b
 %APPDATA%\BrainToolbox\
 ```
 
-Use `--data-dir` to change this location. This directory is separate from the extracted application folder, so deleting the application folder does not automatically remove your experiment data.
+This built-in directory name is retained for compatibility with the existing application. Use `--data-dir` to change this location. This directory is separate from the extracted application folder, so deleting the application folder does not automatically remove your experiment data.
 
 The distribution includes example configurations in `examples/` and AAL/SPM12 atlas and label resources in `nilearn_data/`. Although atlas resources are bundled, some frontend features still load resources from the internet.
 
@@ -310,7 +310,7 @@ Check that all volumes for your selected edition have finished downloading, are 
 
 **The application does not start or its window closes immediately**
 
-Run the executable for your edition from PowerShell in the extracted folder to inspect the error: `.\iBrain-toolbox-chinese.exe` for Chinese, or `.\iBrain-toolbox-english.exe` for English. Check that all accompanying files are present and that the NVIDIA driver supports this CUDA distribution.
+In PowerShell, select the actual executable as described in Startup arguments, then run `& $brainnetExecutable` to inspect the error. Check that all accompanying files are present and that the NVIDIA driver supports this CUDA distribution.
 
 **The browser does not open automatically**
 
@@ -326,4 +326,4 @@ Check connectivity to the public CDNs used by the interface or to the selected m
 
 ### Feedback
 
-Please use the repository's Issues page to report problems or suggest improvements. Include the toolkit version and interface language, Windows version, GPU and driver information, selected method, data dimensions, reproduction steps, and error logs where relevant. Remove API Keys and personal information before sharing logs.
+Please use the repository's Issues page to report problems or suggest improvements. Include the Brainnet-Studio version and interface language, Windows version, GPU and driver information, selected method, data dimensions, reproduction steps, and error logs where relevant. Remove API Keys and personal information before sharing logs.
