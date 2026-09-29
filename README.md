@@ -1,6 +1,6 @@
 # Brainnet-Studio
 
-**脑网络智能分析软件 · Brain Network Intelligent Analysis Toolkit**
+**脑网络智能分析工具包 · Brain Network Intelligent Analysis Toolkit**
 
 **v0.1.0 | Windows x64 | CUDA 12.1**
 
