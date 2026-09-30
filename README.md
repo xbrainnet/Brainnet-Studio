@@ -8,6 +8,8 @@
 
 [中文说明](#中文说明) · [English documentation](#english-documentation)
 
+**Citation:** Xiwei Zeng, Shengrong Li, Yiheng Liu, Chunwei Tian, Daoqiang Zhang, Qi Zhu. *BrainNet Studio: A Unified Toolkit for Brain Network Construction, Intelligent Analysis, and Visualization*. [arXiv:2609.37956](https://arxiv.org/abs/2609.37956).
+
 ## 中文说明
 
 ### 项目简介
