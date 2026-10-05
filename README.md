@@ -20,12 +20,12 @@ Brainnet-Studio 是一款面向脑网络智能分析的可视化研究工具包�
 
 ### 语言版本与发布状态
 
-| 软件版本 | 当前状态         | 主程序                       | 分卷压缩包命名                                     |
-| -------- | ---------------- | ---------------------------- | -------------------------------------------------- |
-| 中文版   | 已发布           | 解压后的主程序 `.exe` | `Brainnet-Studio-chinese-v0.1.0.zip.001`、`.002`    |
-| 英文版   | 已发布 | 解压后的主程序 `.exe` | `Brainnet-Studio-english-v0.1.0.zip.001`、`.002` |
+| 软件版本 | 当前状态 | 主程序 | 压缩包文件名 |
+| -------- | -------- | ------ | ------------ |
+| 中文版 | 已发布 | 解压后的主程序 `.exe` | `Brainnet-Studio-chinese-v0.1.0.7z` |
+| 英文版 | 已发布 | 解压后的主程序 `.exe` | `Brainnet-Studio-english-v0.1.0.7z` |
 
-中文版压缩包使用 `Brainnet-Studio-chinese` 前缀，英文版使用 `Brainnet-Studio-english` 前缀；两个版本的 v0.1.0 均包含 `.zip.001` 和 `.zip.002` 两个分卷。两种界面语言分别打包，请按所需语言选择发行包。
+中文版压缩包使用 `Brainnet-Studio-chinese` 前缀，英文版使用 `Brainnet-Studio-english` 前缀；两个版本的 v0.1.0 均以单个 `.7z` 压缩包提供。请选择所需语言版本，只需下载对应的一个文件。
 
 项目和下载压缩包统一使用 Brainnet-Studio 名称；现有 `.exe` 文件及程序内置数据目录保留原名，启动时请使用发行包内的主程序。
 
@@ -54,29 +54,22 @@ Brainnet-Studio 是一款面向脑网络智能分析的可视化研究工具包�
 
 ### 下载与启动
 
-在本仓库的 **Releases** 页面下载所需语言版本的全部分卷文件。目前可下载的中文版 v0.1.0 包含：
+中英文版分别在对应的 Release 中提供一个完整的 `.7z` 压缩包，每个文件约 1.65 GB：
 
-```text
-Brainnet-Studio-chinese-v0.1.0.zip.001
-Brainnet-Studio-chinese-v0.1.0.zip.002
-```
+| 语言版本 | 下载压缩包 | 发布说明与 SHA-256 校验值 |
+| -------- | ---------- | ----------------------- |
+| 中文版 | [Brainnet-Studio-chinese-v0.1.0.7z](https://github.com/xbrainnet/Brainnet-Studio/releases/download/Brainnet-Studio-v0.1.0-chinese/Brainnet-Studio-chinese-v0.1.0.7z) | [中文版 Release](https://github.com/xbrainnet/Brainnet-Studio/releases/tag/Brainnet-Studio-v0.1.0-chinese) |
+| 英文版 | [Brainnet-Studio-english-v0.1.0.7z](https://github.com/xbrainnet/Brainnet-Studio/releases/download/v0.1.0-english/Brainnet-Studio-english-v0.1.0.7z) | [英文版 Release](https://github.com/xbrainnet/Brainnet-Studio/releases/tag/v0.1.0-english) |
 
-英文版 v0.1.0 已发布，分卷文件如下：
+以下步骤适用于所下载的语言版本：
 
-```text
-Brainnet-Studio-english-v0.1.0.zip.001
-Brainnet-Studio-english-v0.1.0.zip.002
-```
-
-英文版实际分卷数量以 Releases 附件为准。以下步骤适用于所下载的语言版本：
-
-1. 将同一语言版本的全部分卷文件放入同一文件夹，保留原始文件名；请勿混用中英文版分卷。
-2. 使用支持分卷 ZIP 的解压软件（例如 7-Zip），从 `.zip.001` 文件开始解压；无需分别解压各个分卷。若同时使用两个版本，请分别解压到不同目录。
+1. 下载所需语言版本的单个 `.7z` 文件，等待下载完成。
+2. 使用 7-Zip 打开该 `.7z` 文件并解压。若同时使用两个版本，请分别解压到不同目录。
 3. 完整保留解压后的文件夹。主程序需要同目录下的依赖文件，请勿只移动 `.exe` 文件。
 4. 在所需语言版本的解压目录中双击 `start.bat`，或运行该目录中的主程序 `.exe`。
 5. 浏览器将自动打开本地界面：[http://127.0.0.1:5000](http://127.0.0.1:5000)。
 
-运行期间请保留程序的命令行窗口；关闭该窗口会停止本地服务。上述分卷文件是可运行的发行包，GitHub 自动生成的 `Source code` 压缩包不等同于该安装包。
+运行期间请保留程序的命令行窗口；关闭该窗口会停止本地服务。上述 `.7z` 文件是可运行的发行包，GitHub 自动生成的 `Source code` 压缩包不等同于该安装包。
 
 ### 数据准备
 
@@ -145,9 +138,9 @@ Set-Location -LiteralPath (Split-Path -Parent $brainnetExecutable)
 
 ### 常见问题
 
-**解压失败或提示缺少分卷**
+**解压失败或提示压缩包损坏**
 
-确认所选语言版本的全部分卷均已下载完成、位于同一目录且文件名未修改，再从 `.zip.001` 开始解压。中英文版分卷不能混用。
+确认所选语言版本的 `.7z` 文件已完整下载，并使用 7-Zip 解压。可按对应 Release 中的方法计算 SHA-256，与该页面公布的校验值比较；若不一致，请重新下载对应文件。
 
 **程序无法启动或窗口立即关闭**
 
@@ -181,12 +174,12 @@ The Chinese edition is available as a **Windows 64-bit CUDA executable package**
 
 ### Language editions and release status
 
-| Edition | Current status                      | Executable                   | Archive volume naming                                 |
-| ------- | ----------------------------------- | ---------------------------- | ----------------------------------------------------- |
-| Chinese | Released                            | Main `.exe` in the extracted folder | `Brainnet-Studio-chinese-v0.1.0.zip.001`, `.002`       |
-| English | Released | Main `.exe` in the extracted folder | `Brainnet-Studio-english-v0.1.0.zip.001`, `.002` |
+| Edition | Current status | Executable | Archive filename |
+| ------- | -------------- | ---------- | ---------------- |
+| Chinese | Released | Main `.exe` in the extracted folder | `Brainnet-Studio-chinese-v0.1.0.7z` |
+| English | Released | Main `.exe` in the extracted folder | `Brainnet-Studio-english-v0.1.0.7z` |
 
-The Chinese archives use the `Brainnet-Studio-chinese` prefix, while the English archives use `Brainnet-Studio-english`; both v0.1.0 editions contain two volumes, `.zip.001` and `.zip.002`. The two interface languages are packaged separately. Choose the package for your preferred language.
+The Chinese package uses the `Brainnet-Studio-chinese` prefix, while the English package uses `Brainnet-Studio-english`. Each v0.1.0 edition is provided as a single `.7z` archive. Download the one file for your preferred language.
 
 The project and downloadable archives use the Brainnet-Studio name; existing `.exe` files and the program's built-in data directory retain their original names. Launch the main executable included in the distribution.
 
@@ -215,29 +208,22 @@ The project and downloadable archives use the Brainnet-Studio name; existing `.e
 
 ### Download and launch
 
-Download all archive volumes for your chosen language edition from this repository's **Releases** page. The currently available Chinese edition of v0.1.0 contains:
+Each language edition provides one complete `.7z` archive in its corresponding Release. Each file is approximately 1.65 GB:
 
-```text
-Brainnet-Studio-chinese-v0.1.0.zip.001
-Brainnet-Studio-chinese-v0.1.0.zip.002
-```
+| Edition | Download archive | Release notes and SHA-256 checksum |
+| ------- | ---------------- | --------------------------------- |
+| Chinese | [Brainnet-Studio-chinese-v0.1.0.7z](https://github.com/xbrainnet/Brainnet-Studio/releases/download/Brainnet-Studio-v0.1.0-chinese/Brainnet-Studio-chinese-v0.1.0.7z) | [Chinese Release](https://github.com/xbrainnet/Brainnet-Studio/releases/tag/Brainnet-Studio-v0.1.0-chinese) |
+| English | [Brainnet-Studio-english-v0.1.0.7z](https://github.com/xbrainnet/Brainnet-Studio/releases/download/v0.1.0-english/Brainnet-Studio-english-v0.1.0.7z) | [English Release](https://github.com/xbrainnet/Brainnet-Studio/releases/tag/v0.1.0-english) |
 
-The English edition of v0.1.0 is now available with the following archive volumes:
+The following steps apply to the edition you download:
 
-```text
-Brainnet-Studio-english-v0.1.0.zip.001
-Brainnet-Studio-english-v0.1.0.zip.002
-```
-
-Check the published release assets for the final number of English archive volumes. The following steps apply to the edition you download:
-
-1. Place all volumes for the same language edition in one folder and keep their original filenames. Do not mix Chinese and English archive volumes.
-2. Use an archive utility that supports split ZIP archives, such as 7-Zip, and start extraction from `.zip.001`. Do not extract each volume separately. If using both editions, extract them into separate directories.
+1. Download the single `.7z` file for your preferred language and wait for the download to finish.
+2. Open the `.7z` file with 7-Zip and extract it. If using both editions, extract them into separate directories.
 3. Keep the extracted folder intact. The executable depends on the accompanying files; do not move the `.exe` on its own.
 4. Open `start.bat` in the extracted folder for your chosen language edition, or run the main `.exe` in that folder.
 5. Your browser will automatically open the local interface at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
-Keep the application's command window open while using Brainnet-Studio. Closing it stops the local service. The archive volumes above contain the runnable distribution; GitHub's automatically generated `Source code` archives are not equivalent to this package.
+Keep the application's command window open while using Brainnet-Studio. Closing it stops the local service. The `.7z` archives above contain the runnable distribution; GitHub's automatically generated `Source code` archives are not equivalent to this package.
 
 ### Prepare your data
 
@@ -306,9 +292,9 @@ The distribution includes example configurations in `examples/` and AAL/SPM12 at
 
 ### Troubleshooting
 
-**Extraction fails or a volume is missing**
+**Extraction fails or the archive is reported as damaged**
 
-Check that all volumes for your selected edition have finished downloading, are in the same folder, and retain their original filenames. Start extraction from `.zip.001`. Do not mix Chinese and English volumes.
+Check that the `.7z` file for your selected edition has finished downloading, then extract it with 7-Zip. Follow the checksum instructions in the corresponding Release to calculate SHA-256 and compare it with the published value. If the values differ, download the file again.
 
 **The application does not start or its window closes immediately**
 
