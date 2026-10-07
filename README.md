@@ -158,6 +158,10 @@ Set-Location -LiteralPath (Split-Path -Parent $brainnetExecutable)
 
 检查网络是否可以访问页面使用的公共 CDN 或所选模型服务。使用 AI 报告时，还需确认 API Key 和所选模型可用。
 
+### 联系方式
+
+邮箱：[xwzeng@nuaa.edu.cn](mailto:xwzeng@nuaa.edu.cn)
+
 ### 问题反馈
 
 欢迎通过仓库 Issues 提交问题或建议。建议附上 Brainnet-Studio 版本及界面语言、Windows 版本、GPU 与驱动信息、所选方法、数据维度、复现步骤及错误日志。提交前请移除日志中的 API Key 和个人信息。
@@ -311,6 +315,10 @@ Select an available port using an argument such as `--port 8080`.
 **Some charts or AI reports do not load**
 
 Check connectivity to the public CDNs used by the interface or to the selected model service. For AI reports, also verify that your API Key and selected model are available.
+
+### Contact
+
+Email: [xwzeng@nuaa.edu.cn](mailto:xwzeng@nuaa.edu.cn)
 
 ### Feedback
 
