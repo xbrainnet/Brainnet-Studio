@@ -8,7 +8,14 @@
 
 [中文说明](#中文说明) · [English documentation](#english-documentation)
 
-**Citation:** Xiwei Zeng, Shengrong Li, Yiheng Liu, Chunwei Tian, Daoqiang Zhang, Qi Zhu. *BrainNet Studio: A Unified Toolkit for Brain Network Construction, Intelligent Analysis, and Visualization*. [arXiv:2609.37956](https://arxiv.org/abs/2609.37956).
+## 引用说明 / How to Cite
+
+如果您在论文中使用BrainNet Studio的分析结果，请在参考文献中引用以下论文。
+
+If you use analysis results from BrainNet Studio in your manuscript, please cite the following papers in your reference list.
+
+1. Xiwei Zeng, Shengrong Li, Yiheng Liu, Chunwei Tian, Daoqiang Zhang, and Qi Zhu. *BrainNet Studio: A Unified Toolkit for Brain Network Construction, Intelligent Analysis, and Visualization*. 2026. [arXiv:2609.37956](https://arxiv.org/abs/2609.37956)
+2. Qi Zhu, Shengrong Li, Xiangshui Meng, Qiang Xu, Zhiqiang Zhang, Wei Shao, and Daoqiang Zhang. *Spatio-Temporal Graph Hubness Propagation Model for Dynamic Brain Network Classification*. IEEE Transactions on Medical Imaging, 43(6), 2381–2394, 2024. [IEEE Xplore](https://ieeexplore.ieee.org/document/10423044)
 
 ## 中文说明
 
